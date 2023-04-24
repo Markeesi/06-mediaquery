@@ -1,0 +1,67 @@
+html {
+  font-size: 62.5%;
+}
+body {
+  margin: 1rem;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  background-color: blueviolet;
+  color: azure;
+}
+h1 {
+  font-size: 3.2rem;
+  padding: 1rem;
+}
+
+p {
+  font-size: 1.6rem;
+  padding: 1rem;
+}
+.mobile {
+  background-color: azure;
+  color: blueviolet;
+  display: inline-block;
+  margin: -1rem 0 1rem -1rem;
+}
+
+.tablet {
+  display: none;
+}
+
+/* Tablet näkymä */
+
+@media only screen and (min-width: 426px) {
+  body {
+    background-color: tomato;
+  }
+  .mobile {
+    display: none;
+  }
+
+  .tablet {
+    background-color: azure;
+    color: tomato;
+    display: inline-block;
+    margin: -1rem 0 1rem -1rem;
+  }
+  .desktop {
+    display: none;
+  }
+}
+
+/* Desktop näkymä */
+
+@media only screen and (min-width: 769px) {
+  body {
+    background-color: mediumaquamarine;
+  }
+
+  .tablet {
+    display: none;
+  }
+  .desktop {
+    background-color: azure;
+    color: mediumaquamarine;
+    display: inline-block;
+    margin: -1rem 0 1rem -1rem;
+  }
+}
